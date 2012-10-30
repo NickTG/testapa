@@ -1,0 +1,65 @@
+<%= form_for(@category) do |f| %>
+  <% if @category.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@category.errors.count, "error") %> prohibited this category from being saved:</h2>
+
+      <ul>
+      <% @category.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :id %><br />
+    <%= f.text_field :id %>
+  </div>
+  <div class="field">
+    <%= f.label :active %><br />
+    <%= f.text_field :active %>
+  </div>
+  <div class="field">
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :parentCategory %><br />
+    <%= f.text_field :parentCategory %>
+  </div>
+  <div class="field">
+    <%= f.label :rootCategory %><br />
+    <%= f.text_field :rootCategory %>
+  </div>
+  <div class="field">
+    <%= f.label :description %><br />
+    <%= f.text_area :description %>
+  </div>
+  <div class="field">
+    <%= f.label :metaTitle %><br />
+    <%= f.text_field :metaTitle %>
+  </div>
+  <div class="field">
+    <%= f.label :metaKeywords %><br />
+    <%= f.text_field :metaKeywords %>
+  </div>
+  <div class="field">
+    <%= f.label :metaDescription %><br />
+    <%= f.text_field :metaDescription %>
+  </div>
+  <div class="field">
+    <%= f.label :urlRewritten %><br />
+    <%= f.text_field :urlRewritten %>
+  </div>
+  <div class="field">
+    <%= f.label :imageUrl %><br />
+    <%= f.text_field :imageUrl %>
+  </div>
+  <div class="field">
+    <%= f.label :idShop %><br />
+    <%= f.text_field :idShop %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

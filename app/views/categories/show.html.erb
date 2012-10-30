@@ -1,0 +1,65 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Id:</b>
+  <%= @category.id %>
+</p>
+
+<p>
+  <b>Active:</b>
+  <%= @category.active %>
+</p>
+
+<p>
+  <b>Name:</b>
+  <%= @category.name %>
+</p>
+
+<p>
+  <b>Parentcategory:</b>
+  <%= @category.parentCategory %>
+</p>
+
+<p>
+  <b>Rootcategory:</b>
+  <%= @category.rootCategory %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @category.description %>
+</p>
+
+<p>
+  <b>Metatitle:</b>
+  <%= @category.metaTitle %>
+</p>
+
+<p>
+  <b>Metakeywords:</b>
+  <%= @category.metaKeywords %>
+</p>
+
+<p>
+  <b>Metadescription:</b>
+  <%= @category.metaDescription %>
+</p>
+
+<p>
+  <b>Urlrewritten:</b>
+  <%= @category.urlRewritten %>
+</p>
+
+<p>
+  <b>Imageurl:</b>
+  <%= @category.imageUrl %>
+</p>
+
+<p>
+  <b>Idshop:</b>
+  <%= @category.idShop %>
+</p>
+
+
+<%= link_to 'Edit', edit_category_path(@category) %> |
+<%= link_to 'Back', categories_path %>

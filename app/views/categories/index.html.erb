@@ -1,0 +1,45 @@
+<h1>Listing categories</h1>
+
+<table>
+  <tr>
+    <th>Id</th>
+    <th>Active</th>
+    <th>Name</th>
+    <th>Parentcategory</th>
+    <th>Rootcategory</th>
+    <th>Description</th>
+    <th>Metatitle</th>
+    <th>Metakeywords</th>
+    <th>Metadescription</th>
+    <th>Urlrewritten</th>
+    <th>Imageurl</th>
+    <th>Idshop</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @categories.each do |category| %>
+  <tr>
+    <td><%= category.id %></td>
+    <td><%= category.active %></td>
+    <td><%= category.name %></td>
+    <td><%= category.parentCategory %></td>
+    <td><%= category.rootCategory %></td>
+    <td><%= category.description %></td>
+    <td><%= category.metaTitle %></td>
+    <td><%= category.metaKeywords %></td>
+    <td><%= category.metaDescription %></td>
+    <td><%= category.urlRewritten %></td>
+    <td><%= category.imageUrl %></td>
+    <td><%= category.idShop %></td>
+    <td><%= link_to 'Show', category %></td>
+    <td><%= link_to 'Edit', edit_category_path(category) %></td>
+    <td><%= link_to 'Destroy', category, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Category', new_category_path %>

@@ -1,0 +1,29 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  id: MyString
+  active: MyString
+  name: MyString
+  parentCategory: MyString
+  rootCategory: MyString
+  description: MyText
+  metaTitle: MyString
+  metaKeywords: MyString
+  metaDescription: MyString
+  urlRewritten: MyString
+  imageUrl: MyString
+  idShop: MyString
+
+two:
+  id: MyString
+  active: MyString
+  name: MyString
+  parentCategory: MyString
+  rootCategory: MyString
+  description: MyText
+  metaTitle: MyString
+  metaKeywords: MyString
+  metaDescription: MyString
+  urlRewritten: MyString
+  imageUrl: MyString
+  idShop: MyString
